@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/magdyMohammed20/ultimate-template/issues"
   },
-  "homepage": "https://github.com/magdyMohammed20/ultimate-template#readme"
+  "homepage": "https://github.com/magdyMohammed20/ultimate-template#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
