@@ -1,0 +1,19 @@
+{
+  "name": "ultimate-template",
+  "version": "1.0.0",
+  "description": "Ultimate Template App With (html , css , js , gulp , sass , pug , bootstrap , jquery , git , github)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magdyMohammed20/ultimate-template.git"
+  },
+  "author": "Magdy Mohammed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magdyMohammed20/ultimate-template/issues"
+  },
+  "homepage": "https://github.com/magdyMohammed20/ultimate-template#readme"
+}
