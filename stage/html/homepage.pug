@@ -5,10 +5,14 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title #{pageTitle}
-        include ./styles
+        include ./pug/layout/styles
+        include ./pug/layout/scripts
+        
     body
         .page.home-page
             include pug/layout/sidebar
             .content
+                include pug/layout/header
+                        
                 .content-container
                     h1 #{pageTitle}

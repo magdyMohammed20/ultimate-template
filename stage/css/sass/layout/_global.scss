@@ -11,9 +11,14 @@ body{
         padding-left: 20px;
         height: 100%;
         will-change: width;
+        transition: .3s;
 
         .content-container{
             padding: 0 15px;
+        }
+
+        &.no-sidebar{
+            width: 100%;
         }
     }
 }
