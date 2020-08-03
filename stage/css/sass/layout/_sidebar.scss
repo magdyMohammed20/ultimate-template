@@ -91,11 +91,26 @@
                         border-radius: 50%;
                     }
                 }
+
+                i {
+                    background: #474d51;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    transition: .3s;
+                }
+
+                i.open-submenu {
+                    transform: rotate(90deg);
+                }
             }
 
 
 
             .child-links {
+                display: none;
+
                 a {
                     padding: 10px 20px;
                 }

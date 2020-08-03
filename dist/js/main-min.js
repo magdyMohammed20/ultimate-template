@@ -1,1 +1,1 @@
-$(function(){"use strict";$(".toggle-btn").on("click",()=>{$(" .side-bar ,.content").toggleClass("no-sidebar")})});
+$(function(){"use strict";$(".toggle-btn").on("click",()=>{$(".side-bar ,.content").toggleClass("no-sidebar")}),$(".toggle-submenu").on("click",function(e){e.preventDefault(),$(this).toggleClass("open-submenu"),$(".child-links").slideToggle()})});
