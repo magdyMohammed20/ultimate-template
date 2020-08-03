@@ -1,3 +1,7 @@
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -12,10 +16,6 @@ body {
         will-change: width;
         transition: .3s;
         background-color: #d2dae2;
-
-        .content-container {
-            padding: 0 15px;
-        }
 
         &.no-sidebar {
             width: 100%;
