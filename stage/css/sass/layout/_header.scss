@@ -3,5 +3,12 @@ header {
 
     button {
         cursor: pointer;
+        background-color: #1e272e;
+        width: 50px;
+        height: 50px;
+
+        &:focus {
+            outline: none !important;
+        }
     }
 }
