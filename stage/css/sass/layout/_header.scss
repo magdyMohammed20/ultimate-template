@@ -14,8 +14,16 @@ header {
     }
 
     button,
-    i.dropdown-toggle {
+    i.dropdown-toggle,
+    i.fullscreen {
         cursor: pointer;
+        color: #FFF;
+        background-color: #1e272e;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
     }
 
     .dropdown {
