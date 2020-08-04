@@ -14,7 +14,7 @@ header {
     }
 
     button,
-    i.dropdown-toggle,
+    i.dropdown-toggle:not(#user),
     i.fullscreen {
         cursor: pointer;
         color: #FFF;
@@ -26,47 +26,86 @@ header {
         border-radius: 50%;
     }
 
-    .dropdown {
-        i {
-            &:after {
-                display: none;
-            }
-        }
-
-        .dropdown-menu {
-            width: 500px;
-
-            &[x-placement^=bottom],
-            &[x-placement^=left],
-            &[x-placement^=right],
-            &[x-placement^=top] {
-                right: 0;
-            }
-
-            .not-head {
-                background-color: #1e272e;
-            }
-
-            .not-body {
-                i {
-                    background-color: #EEE;
-                    width: 35px;
-                    height: 35px;
-                    border-radius: 50%;
-                    text-align: center;
-                    line-height: 35px;
-
+    .icons {
+        .dropdown {
+            i {
+                &:after {
+                    display: none;
                 }
             }
 
-            .not-footer {
-                a {
-                    text-decoration: none;
+            .dropdown-menu {
+                width: 500px;
+
+                &[x-placement^=bottom],
+                &[x-placement^=left],
+                &[x-placement^=right],
+                &[x-placement^=top] {
+                    right: 0;
+                }
+
+                .not-head {
                     background-color: #1e272e;
+                }
+
+                .not-body {
+                    i {
+                        background-color: #EEE;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 35px;
+
+                    }
+                }
+
+                .not-footer {
+                    a {
+                        text-decoration: none;
+                        background-color: #1e272e;
+                    }
+                }
+            }
+
+            .user {
+                cursor: pointer;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .user-data,
+        .user-links {
+            background-color: #1e272e;
+        }
+
+        .user-links {
+            button {
+                background-color: #6f6f6f38;
+            }
+
+            .settings {
+                i {
+                    color: $flatBlue;
+                }
+            }
+
+            .profile {
+                i {
+                    color: $flatGreen;
+                }
+            }
+
+            .logout {
+                i {
+                    color: $flatRed;
                 }
             }
         }
     }
-
-
 }
