@@ -1,3 +1,26 @@
-header
-    button.toggle-btn.border-0.text-white.rounded-0
-        i.fas.fa-bars
+header.d-flex.justify-content-between
+        button.toggle-btn.border-0.text-white.rounded-0
+            i.fas.fa-bars
+        .dropdown.d-flex.align-items-center.mr-3
+            i#nots.dropdown-toggle.fas.fa-bell(data-toggle='dropdown', aria-expanded='false')
+            .dropdown-menu.dropdown-menu-right.p-0(aria-labelledby='nots')
+                .not-head.d-flex.justify-content-between.align-items-center.p-3.text-white
+                    span Notifications
+                    .badge.bg-success.rounded-pill 50
+                .not-body.py-2.px-3
+                    ul.list-unstyled
+                        li.my-3
+                            i.far.fa-envelope.mr-2
+                            span You Have A Message From Someone
+                        li.my-3
+                            i.far.fa-thumbs-up.mr-2
+                            span Someone Like Your Post
+                        li.my-3
+                            i.far.fa-money-bill-alt.mr-2
+                            span Someone Sent Money To You
+                        li.mt-3
+                            i.fas.fa-microphone-alt.mr-2
+                            span New Event Announcement Is Triggered
+
+                .not-footer.text-center
+                    a(href='#').d-block.p-3.text-white View All Notifications
