@@ -17,6 +17,13 @@ body {
         transition: .3s;
         background-color: #d2dae2;
 
+        // Default Color Theme
+
+        h1 {
+            color: #27ae60
+        }
+
+
         &.no-sidebar {
             width: 100%;
         }

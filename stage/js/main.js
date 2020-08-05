@@ -62,4 +62,15 @@ $(function () {
     $('.settings').toggleClass('hide-settings')
     $(this).children().toggleClass('fa-spin');
   })
+
+  // Changing Website Theme Color
+  let themeColors = []
+  $('.color-settings li').each(function () {
+    themeColors.push($(this).data('theme'))
+  })
+
+  $('.color-settings li').on('click', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+    $('body').removeClass(themeColors.join(' ')).addClass($(this).data('theme'))
+  })
 });

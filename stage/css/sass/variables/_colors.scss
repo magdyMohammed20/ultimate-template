@@ -1,13 +1,36 @@
-$themes : (flatBlue : #2980b9,
+$themesColors : (flatBlue : #2980b9,
     flatBlueAlt : #3498db,
     flatRed:#c0392b,
     flatRedAlt:#e74c3c,
     flatGreen:#27ae60,
     flatGreenAlt:#2ecc71);
 
+$themesBack : (flatGreen:#27ae60,
+    flatBlue : #2980b9,
+    flatRed:#c0392b,
+    flatBlack: #1e272e,
+    flatSpeechBlue: #3c40c6,
+    flatSunset: #ff5e57,
+    flatSpero: #40739e);
+
 @each $key,
-$val in $themes {
+$val in $themesColors {
     .#{$key} {
-        color: $val
+        color: $val;
     }
+}
+
+
+@each $key,
+$val in $themesBack {
+    .#{$key}-back {
+        background-color: $val;
+
+        // Generate Many Colors For Theme Change
+        .page .page-head h1 {
+            color: $val
+        }
+    }
+
+
 }

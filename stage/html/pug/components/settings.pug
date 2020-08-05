@@ -2,8 +2,15 @@
     .settings-gear.position-absolute.bg-white.text-center
         i.fas.fa-cog
     h4 Settings
-    .color-settings
-        | COlors
+    .color-settings.mt-4
+        p.text-muted Select Color
+        ul.list-unstyled.d-flex
+            -var themes = ['flatGreen-back','flatBlue-back','flatRed-back','flatBlack-back','flatSpeechBlue-back','flatSunset-back','flatSpero-back']
+            each val,index in themes
+                if val == 'flatGreen-back'
+                    li(data-theme= val class=val + ' active')
+                else
+                    li(data-theme= val class=val)
     .font-settings
         | Font
     .site-settings
