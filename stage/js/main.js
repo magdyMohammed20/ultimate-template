@@ -73,4 +73,15 @@ $(function () {
     $(this).addClass('active').siblings().removeClass('active');
     $('body').removeClass(themeColors.join(' ')).addClass($(this).data('theme'))
   })
+
+  // Change Website Font
+  let themeFonts = []
+  $('.selectFont option').each(function () {
+    themeFonts.push($(this).val())
+  })
+
+  $('.selectFont').on('change', function () {
+
+    $('body').removeClass(themeFonts.join(' ')).addClass($(this).val())
+  })
 });

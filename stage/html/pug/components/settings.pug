@@ -11,7 +11,11 @@
                     li(data-theme= val class=val + ' active')
                 else
                     li(data-theme= val class=val)
-    .font-settings
-        | Font
+    .font-settings.my-4
+            -var fonts = ['Archivo','Cairo','Saira','Viga']
+            p.text-muted Select Font
+            select.form-select.selectFont
+                each val in fonts
+                    option(value= val)= val + ' Font'
     .site-settings
         | Settings
