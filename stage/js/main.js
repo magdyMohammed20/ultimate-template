@@ -60,6 +60,6 @@ $(function () {
   // Settings Toggle Button
   $('.settings-gear').on('click', function () {
     $('.settings').toggleClass('hide-settings')
-    $(this).find('i').toggleClass('fa-spin');
+    $(this).children().toggleClass('fa-spin');
   })
 });
