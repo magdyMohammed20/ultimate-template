@@ -1,5 +1,3 @@
-@import '../variables/colors';
-
 header {
     background-color: #FFF;
 
@@ -86,24 +84,6 @@ header {
         .user-links {
             button {
                 background-color: #6f6f6f38;
-            }
-
-            .settings {
-                i {
-                    color: $flatBlue;
-                }
-            }
-
-            .profile {
-                i {
-                    color: $flatGreen;
-                }
-            }
-
-            .logout {
-                i {
-                    color: $flatRed;
-                }
             }
         }
     }
