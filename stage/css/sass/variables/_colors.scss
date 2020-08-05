@@ -27,8 +27,20 @@ $val in $themesBack {
         background-color: $val;
 
         // Generate Many Colors For Theme Change
-        .page .page-head h1 {
-            color: $val
+        .page {
+
+            .page-head h1,
+            .side-bar .links-area a:not(.main-links):hover,
+            .collpase-sidebar:hover,
+            .side-bar .logo-area h3 {
+                color: $val !important;
+            }
+
+            .side-bar .links-area>li>a:after,
+            .child-links a:hover::before {
+                background-color: $val !important;
+            }
+
         }
     }
 

@@ -9,6 +9,10 @@ body {
 }
 
 .page {
+    .child-links a:hover::before {
+        background-color: #27ae60 !important
+    }
+
     .content {
         width: calc(100% - 250px);
         float: right;
@@ -23,6 +27,13 @@ body {
             color: #27ae60
         }
 
+        .collpase-sidebar {
+            transition: .3s;
+
+            &:hover {
+                color: #27ae60
+            }
+        }
 
         &.no-sidebar {
             width: 100%;
