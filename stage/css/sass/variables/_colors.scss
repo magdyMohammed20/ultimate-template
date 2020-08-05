@@ -36,10 +36,13 @@ $val in $themesBack {
                 color: $val !important;
             }
 
+            .links-area>li>a.active,
             .side-bar .links-area>li>a:after,
             .child-links a:hover::before {
                 background-color: $val !important;
             }
+
+
 
         }
     }

@@ -1,8 +1,8 @@
 .side-bar.text-white
-    .logo-area.p-2 
+    .logo-area.p-3
         h3 Dashboard
     ul.links-area.list-unstyled
-        li: a(href='#').text-white.p-3.d-block.main-links Home Page
+        li: a(href='./homepage.html' class= pageTitle == 'Homepage' ? 'active':'' ).text-white.p-3.d-block.main-links Home Page
         li
             a(href='#').text-white.p-3.d-block.main-links.d-flex.justify-content-between.align-items-center
                 |Forms
@@ -12,3 +12,4 @@
                 li: a(href='#').d-block Textarea
                 li: a(href='#').d-block Checkbox
                 li: a(href='#').d-block Radio
+        li: a(href='./charts.html' class= pageTitle == 'Charts' ? 'active':'' ).text-white.p-3.d-block.main-links Charts

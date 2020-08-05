@@ -18,6 +18,10 @@
                 position: relative;
                 overflow: hidden;
 
+                &.active {
+                    background-color: #27ae60
+                }
+
                 &:before {
                     width: 0;
                     height: 0;
